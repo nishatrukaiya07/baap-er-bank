@@ -11,6 +11,14 @@ const email= emailField.value;
 // 3.c:get the value from the element
 const passwordField = document.getElementById('user-password');
 const password= passwordField.value;
-console.log(email, password);
-})
+// console.log(email, password);
 
+
+// step-4:Verify email and password
+if (email === 'sontan@baap.com' && password === 'secret'){
+    window.location.href = 'bank.html';
+}
+else{
+    alert('Invalid');
+}
+})
